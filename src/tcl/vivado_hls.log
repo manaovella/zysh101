@@ -1,0 +1,1323 @@
+================================================================
+  Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC
+  Version 2017.2
+  Build 1909853 on Thu Jun 15 18:55:24 MDT 2017
+  Copyright (C) 1986-2017 Xilinx, Inc. All Rights Reserved.
+================================================================
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado_HLS/2017.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'manovella' on host 'manovella4169' (Windows NT_amd64 version 6.2) on Tue Nov 21 01:29:38 +0100 2017
+INFO: [HLS 200-10] In directory 'Z:/Documents/workspace/zysh101/src/tcl'
+INFO: [HLS 200-10] Creating and opening project 'Z:/Documents/workspace/zysh101/src/tcl/vcamaster'.
+INFO: [HLS 200-10] Adding design file 'Z:/Documents/workspace/zysh101/src/hls/typedef.h' to the project
+INFO: [HLS 200-10] Adding design file 'Z:/Documents/workspace/zysh101/src/hls/define.h' to the project
+INFO: [HLS 200-10] Adding design file 'Z:/Documents/workspace/zysh101/src/hls/vca.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution 'Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe'.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg225-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Analyzing design file 'Z:/Documents/workspace/zysh101/src/hls/vca.cpp' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 96.484 ; gain = 47.070
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 96.523 ; gain = 47.109
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 112.723 ; gain = 63.309
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'toi2s' into 'vcamaster' (Z:/Documents/workspace/zysh101/src/hls/vca.cpp:64) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 121.250 ; gain = 71.836
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'outv.V.V' (Z:/Documents/workspace/zysh101/src/hls/vca.cpp:46).
+INFO: [XFORM 203-1101] Packing variable 'inv.V' (Z:/Documents/workspace/zysh101/src/hls/vca.cpp:46) into a 32-bit variable.
+WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'tmp.V': cannot find another array to be merged with.
+INFO: [XFORM 203-602] Inlining function 'toi2s' into 'vcamaster' (Z:/Documents/workspace/zysh101/src/hls/vca.cpp:64) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Z:/Documents/workspace/zysh101/src/hls/vca.cpp:42:17) to (Z:/Documents/workspace/zysh101/src/hls/vca.cpp:65:1) in function 'vcamaster'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 151.086 ; gain = 101.672
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 153.766 ; gain = 104.352
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'vcamaster' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'vcamaster' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 16.38 seconds; current allocated memory: 105.701 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.073 seconds; current allocated memory: 105.935 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'vcamaster' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'vcamaster/inv_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vcamaster/outv_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vcamaster/params_V' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'vcamaster' to 'ap_ctrl_none'.
+INFO: [SYN 201-210] Renamed object name 'vcamaster_mul_32ns_24s_48_7' to 'vcamaster_mul_32nbkb' due to the length limit 20
+WARNING: [RTGEN 206-101] Setting dangling out port 'vcamaster/params_V_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'vcamaster/params_V_Din_A' to 0.
+INFO: [RTGEN 206-100] Generating core module 'vcamaster_mul_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'vcamaster'.
+INFO: [HLS 200-111]  Elapsed time: 0.112 seconds; current allocated memory: 106.499 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'vcamaster_mul_32nbkb_MulnS_0'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 153.766 ; gain = 104.352
+INFO: [SYSC 207-301] Generating SystemC RTL for vcamaster.
+INFO: [VHDL 208-304] Generating VHDL RTL for vcamaster.
+INFO: [VLOG 209-307] Generating Verilog RTL for vcamaster.
+INFO: [IMPL 213-8] Exporting RTL as an IP in IP-XACT.
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 21 01:30:02 2017...
+
+Z:\Documents\workspace\zysh101\src\tcl\vcamaster\zybe\impl\verilog>vivado  -notrace -mode batch -source run_vivado.tcl   || exit $? 
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_vivado.tcl -notrace
+[Tue Nov 21 01:30:09 2017] Launched synth_1...
+Run output will be captured here: Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/project.runs/synth_1/runme.log
+[Tue Nov 21 01:30:09 2017] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log vcamaster.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vcamaster.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source vcamaster.tcl -notrace
+Command: synth_design -top vcamaster -part xc7z010clg225-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg225'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg225'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1764 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 302.246 ; gain = 78.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vcamaster' [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 14'b00000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 14'b00000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 14'b00000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 14'b00000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 14'b00000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 14'b00000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 14'b00000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 14'b00000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 14'b00000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 14'b00001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 14'b00010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 14'b00100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 14'b01000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 14'b10000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.v:94]
+INFO: [Synth 8-638] synthesizing module 'vcamaster_mul_32nbkb' [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:43]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 24 - type: integer 
+	Parameter dout_WIDTH bound to: 48 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'vcamaster_mul_32nbkb_MulnS_0' [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:11]
+INFO: [Synth 8-256] done synthesizing module 'vcamaster_mul_32nbkb_MulnS_0' (1#1) [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:11]
+INFO: [Synth 8-256] done synthesizing module 'vcamaster_mul_32nbkb' (2#1) [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:43]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.v:561]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.v:563]
+WARNING: [Synth 8-6014] Unused sequential element inv_V_TDATA_blk_n_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.v:349]
+WARNING: [Synth 8-6014] Unused sequential element outv_V_V_TDATA_blk_n_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.v:373]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inv_V_0_data_out_reg' and it is trimmed from '32' to '24' bits. [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.v:341]
+WARNING: [Synth 8-6014] Unused sequential element params_V_Rst_A_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.v:544]
+INFO: [Synth 8-256] done synthesizing module 'vcamaster' (3#1) [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.v:12]
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[31] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[30] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[29] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[28] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[27] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[26] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[25] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[24] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[23] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[22] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[21] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[20] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[19] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[18] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[17] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[16] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[15] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[14] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[13] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[12] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[11] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[10] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[9] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[8] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[7] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[6] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_WEN_A[3] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_WEN_A[2] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_WEN_A[1] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_WEN_A[0] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[31] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[30] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[29] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[28] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[27] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[26] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[25] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[24] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[23] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[22] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[21] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[20] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[19] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[18] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[17] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[16] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[15] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[14] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[13] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[12] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[11] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[10] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[9] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[8] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[7] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[6] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[5] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[4] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[3] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[2] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[1] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[0] driven by constant 0
+WARNING: [Synth 8-3331] design vcamaster_mul_32nbkb has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 342.324 ; gain = 118.223
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 342.324 ; gain = 118.223
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.xdc]
+Finished Parsing XDC File [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 647.543 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 647.543 ; gain = 423.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 647.543 ; gain = 423.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 647.543 ; gain = 423.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'ret_V_cast1_reg_271_reg[23:0]' into 'tmp_2_reg_281_reg[23:0]' [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.v:310]
+WARNING: [Synth 8-6014] Unused sequential element ret_V_cast1_reg_271_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.v:310]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inv_V_0_payload_B_reg' and it is trimmed from '32' to '24' bits. [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.v:279]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inv_V_0_payload_A_reg' and it is trimmed from '32' to '24' bits. [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.v:273]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond_fu_125_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tmp_1_i_fu_223_p2" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 647.543 ; gain = 423.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     49 Bit       Adders := 1     
+	   2 Input     48 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               49 Bit    Registers := 1     
+	               48 Bit    Registers := 6     
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 8     
+	               22 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Multipliers : 
+	                24x33  Multipliers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 4     
+	   2 Input     14 Bit        Muxes := 2     
+	  15 Input     14 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vcamaster 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     49 Bit       Adders := 1     
+	   2 Input     48 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               49 Bit    Registers := 1     
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 7     
+	               22 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 4     
+	   2 Input     14 Bit        Muxes := 2     
+	  15 Input     14 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module vcamaster_mul_32nbkb_MulnS_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 5     
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
++---Multipliers : 
+	                24x33  Multipliers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "tmp_1_i_fu_223_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff0_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:33]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff1_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:34]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:35]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:36]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff0_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:33]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff1_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:34]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:35]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:35]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:36]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff1_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:34]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:35]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:35]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff1_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:34]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/b_reg0_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:28]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff0_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:33]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff0_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:33]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff1_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:34]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:28]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff0_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:33]
+WARNING: [Synth 8-6014] Unused sequential element vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff1_reg was removed.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster_mul_32nbkb.v:34]
+DSP Report: Generating DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg, operation Mode is: (A''*B'')'.
+DSP Report: register B is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg.
+DSP Report: register vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff0_reg is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg.
+DSP Report: register vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/b_reg0_reg is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg.
+DSP Report: register vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff0_reg is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg.
+DSP Report: register vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg.
+DSP Report: register vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff1_reg is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg.
+DSP Report: operator vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/tmp_product is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg.
+DSP Report: operator vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/tmp_product is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg.
+DSP Report: Generating DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg, operation Mode is: (PCIN>>17)+(ACIN''*B'')'.
+DSP Report: register vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff0_reg is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg.
+DSP Report: register vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff1_reg is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg.
+DSP Report: register vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff0_reg is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg.
+DSP Report: register vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff1_reg is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg.
+DSP Report: register vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg.
+DSP Report: register vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff2_reg is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg.
+DSP Report: operator vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/tmp_product is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg.
+DSP Report: operator vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/tmp_product is absorbed into DSP vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg.
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[31] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[30] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[29] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[28] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[27] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[26] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[25] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[24] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[23] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[22] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[21] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[20] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[19] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[18] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[17] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[16] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[15] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[14] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[13] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[12] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[11] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[10] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[9] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[8] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[7] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[6] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[1] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Addr_A[0] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_WEN_A[3] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_WEN_A[2] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_WEN_A[1] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_WEN_A[0] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[31] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[30] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[29] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[28] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[27] driven by constant 0
+WARNING: [Synth 8-3917] design vcamaster has port params_V_Din_A[26] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design vcamaster has unconnected port inv_V_TDATA[31]
+WARNING: [Synth 8-3331] design vcamaster has unconnected port inv_V_TDATA[30]
+WARNING: [Synth 8-3331] design vcamaster has unconnected port inv_V_TDATA[29]
+WARNING: [Synth 8-3331] design vcamaster has unconnected port inv_V_TDATA[28]
+WARNING: [Synth 8-3331] design vcamaster has unconnected port inv_V_TDATA[27]
+WARNING: [Synth 8-3331] design vcamaster has unconnected port inv_V_TDATA[26]
+WARNING: [Synth 8-3331] design vcamaster has unconnected port inv_V_TDATA[25]
+WARNING: [Synth 8-3331] design vcamaster has unconnected port inv_V_TDATA[24]
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[20]' (FDE) to 'tmp_1_reg_276_reg[20]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[21]' (FDE) to 'tmp_1_reg_276_reg[21]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[19]' (FDE) to 'tmp_1_reg_276_reg[19]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[18]' (FDE) to 'tmp_1_reg_276_reg[18]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[17]' (FDE) to 'tmp_1_reg_276_reg[17]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[16]' (FDE) to 'tmp_1_reg_276_reg[16]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[15]' (FDE) to 'tmp_1_reg_276_reg[15]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[14]' (FDE) to 'tmp_1_reg_276_reg[14]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[13]' (FDE) to 'tmp_1_reg_276_reg[13]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[12]' (FDE) to 'tmp_1_reg_276_reg[12]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[11]' (FDE) to 'tmp_1_reg_276_reg[11]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[10]' (FDE) to 'tmp_1_reg_276_reg[10]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[9]' (FDE) to 'tmp_1_reg_276_reg[9]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[8]' (FDE) to 'tmp_1_reg_276_reg[8]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[7]' (FDE) to 'tmp_1_reg_276_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[6]' (FDE) to 'tmp_1_reg_276_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[5]' (FDE) to 'tmp_1_reg_276_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[4]' (FDE) to 'tmp_1_reg_276_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[3]' (FDE) to 'tmp_1_reg_276_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[2]' (FDE) to 'tmp_1_reg_276_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[1]' (FDE) to 'tmp_1_reg_276_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[0]' (FDE) to 'tmp_1_reg_276_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[22]' (FDE) to 'tmp_2_reg_281_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[23]' (FDE) to 'tmp_2_reg_281_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[24]' (FDE) to 'tmp_2_reg_281_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[25]' (FDE) to 'tmp_2_reg_281_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[26]' (FDE) to 'tmp_2_reg_281_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[27]' (FDE) to 'tmp_2_reg_281_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[28]' (FDE) to 'tmp_2_reg_281_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[29]' (FDE) to 'tmp_2_reg_281_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[30]' (FDE) to 'tmp_2_reg_281_reg[8]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[31]' (FDE) to 'tmp_2_reg_281_reg[9]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[32]' (FDE) to 'tmp_2_reg_281_reg[10]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[33]' (FDE) to 'tmp_2_reg_281_reg[11]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[34]' (FDE) to 'tmp_2_reg_281_reg[12]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[35]' (FDE) to 'tmp_2_reg_281_reg[13]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[36]' (FDE) to 'tmp_2_reg_281_reg[14]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[37]' (FDE) to 'tmp_2_reg_281_reg[15]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[38]' (FDE) to 'tmp_2_reg_281_reg[16]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[39]' (FDE) to 'tmp_2_reg_281_reg[17]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[40]' (FDE) to 'tmp_2_reg_281_reg[18]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[41]' (FDE) to 'tmp_2_reg_281_reg[19]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[42]' (FDE) to 'tmp_2_reg_281_reg[20]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[43]' (FDE) to 'tmp_2_reg_281_reg[21]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[44]' (FDE) to 'tmp_2_reg_281_reg[22]'
+INFO: [Synth 8-3886] merging instance 'r_V_reg_266_reg[45]' (FDE) to 'tmp_2_reg_281_reg[23]'
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[47]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[46]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[45]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[44]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[43]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[42]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[41]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[40]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[39]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[38]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[37]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[36]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[35]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[34]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[33]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[32]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[31]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[30]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[29]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[28]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[27]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[26]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[25]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[24]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[23]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[22]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[21]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[20]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[19]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[18]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[17]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[16]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[15]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[14]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[13]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[12]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[11]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[10]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[9]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[8]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[7]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[6]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[5]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[4]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[3]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[2]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[1]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff3_reg[0]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[16]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[15]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[14]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[13]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[12]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[11]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[10]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[9]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[8]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[7]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[6]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[5]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[4]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[3]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[2]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[1]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/a_reg0_reg[0]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[22]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[21]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[20]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[19]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[18]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[17]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[16]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[15]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[14]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[13]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[12]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[11]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[10]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[9]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[8]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[7]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[6]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[5]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[4]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[3]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[2]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[1]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (vcamaster_mul_32nbkb_U0/vcamaster_mul_32nbkb_MulnS_0_U/buff4_reg[0]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_302_reg[22]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_302_reg[21]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_302_reg[20]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_302_reg[19]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_302_reg[18]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_302_reg[17]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_302_reg[16]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_302_reg[15]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_302_reg[14]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_302_reg[13]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_302_reg[12]) is unused and will be removed from module vcamaster.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_302_reg[11]) is unused and will be removed from module vcamaster.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 647.543 ; gain = 423.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping              | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|vcamaster   | (A''*B'')'               | 24     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|vcamaster   | (PCIN>>17)+(ACIN''*B'')' | 24     | 16     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 651.125 ; gain = 427.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 664.273 ; gain = 440.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 673.418 ; gain = 449.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.418 ; gain = 449.316
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.418 ; gain = 449.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.418 ; gain = 449.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.418 ; gain = 449.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.418 ; gain = 449.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.418 ; gain = 449.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    25|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_1 |     1|
+|4     |LUT1      |    75|
+|5     |LUT2      |    29|
+|6     |LUT3      |    61|
+|7     |LUT4      |    27|
+|8     |LUT5      |     5|
+|9     |LUT6      |     5|
+|10    |FDRE      |   318|
+|11    |FDSE      |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------------------------+-----------------------------+------+
+|      |Instance                           |Module                       |Cells |
++------+-----------------------------------+-----------------------------+------+
+|1     |top                                |                             |   548|
+|2     |  vcamaster_mul_32nbkb_U0          |vcamaster_mul_32nbkb         |    68|
+|3     |    vcamaster_mul_32nbkb_MulnS_0_U |vcamaster_mul_32nbkb_MulnS_0 |    68|
++------+-----------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.418 ; gain = 449.316
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 208 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 673.418 ; gain = 144.098
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.418 ; gain = 449.316
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+70 Infos, 238 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 673.418 ; gain = 453.445
+INFO: [Common 17-1381] The checkpoint 'Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/project.runs/synth_1/vcamaster.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 673.418 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 21 01:30:47 2017...
+[Tue Nov 21 01:30:50 2017] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:40 . Memory (MB): peak = 237.008 ; gain = 5.512
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg225-1
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.xdc:2]
+Finished Parsing XDC File [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 489.922 ; gain = 252.914
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 489.922 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+report_timing: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 915.555 ; gain = 425.633
+[Tue Nov 21 01:31:07 2017] Launched impl_1...
+Run output will be captured here: Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/project.runs/impl_1/runme.log
+[Tue Nov 21 01:31:07 2017] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log vcamaster.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source vcamaster.tcl -notrace
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source vcamaster.tcl -notrace
+Command: open_checkpoint Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/project.runs/impl_1/vcamaster.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 219.707 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/project.runs/impl_1/.Xil/Vivado-4460-MANOVELLA4169/dcp3/vcamaster.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.xdc:2]
+Finished Parsing XDC File [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/project.runs/impl_1/.Xil/Vivado-4460-MANOVELLA4169/dcp3/vcamaster.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.2 (64-bit) build 1909853
+open_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 490.102 ; gain = 270.395
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg225'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg225'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.377 . Memory (MB): peak = 496.738 ; gain = 6.637
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: b9f4ea61
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 916.805 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 24 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: b9f4ea61
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 916.805 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1639d00d1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 916.805 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1639d00d1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 916.805 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1639d00d1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 916.805 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 916.805 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1639d00d1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 916.805 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 125ed1ba9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 916.805 ; gain = 0.000
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 916.805 ; gain = 426.703
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/project.runs/impl_1/vcamaster_opt.dcp' has been generated.
+Command: report_drc -file vcamaster_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/project.runs/impl_1/vcamaster_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg225'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg225'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 929.609 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 6686e168
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 929.609 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 929.609 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f0492c81
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.422 . Memory (MB): peak = 929.609 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1ba75c34c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.546 . Memory (MB): peak = 931.605 ; gain = 1.996
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1ba75c34c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.549 . Memory (MB): peak = 931.605 ; gain = 1.996
+Phase 1 Placer Initialization | Checksum: 1ba75c34c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.550 . Memory (MB): peak = 931.605 ; gain = 1.996
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1f1597b18
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 931.605 ; gain = 1.996
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1f1597b18
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 931.605 ; gain = 1.996
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 22c0bb66d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 931.605 ; gain = 1.996
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 150c5e3ce
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 931.605 ; gain = 1.996
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 150c5e3ce
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 931.605 ; gain = 1.996
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1e61e07e3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 931.605 ; gain = 1.996
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1fbd29608
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 931.605 ; gain = 1.996
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1fbd29608
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 931.605 ; gain = 1.996
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1fbd29608
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 931.605 ; gain = 1.996
+Phase 3 Detail Placement | Checksum: 1fbd29608
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 931.605 ; gain = 1.996
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 129ca9fa4
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 129ca9fa4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 933.156 ; gain = 3.547
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.507. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: bbb41d85
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 933.156 ; gain = 3.547
+Phase 4.1 Post Commit Optimization | Checksum: bbb41d85
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 933.156 ; gain = 3.547
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: bbb41d85
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 933.156 ; gain = 3.547
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: bbb41d85
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 933.156 ; gain = 3.547
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 128927e76
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 933.156 ; gain = 3.547
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 128927e76
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 933.156 ; gain = 3.547
+Ending Placer Task | Checksum: da07bb5b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 933.156 ; gain = 3.547
+41 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 936.574 ; gain = 3.418
+INFO: [Common 17-1381] The checkpoint 'Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/project.runs/impl_1/vcamaster_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 937.395 ; gain = 0.820
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 937.395 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 937.395 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg225'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg225'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.500 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+45 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.227 . Memory (MB): peak = 941.461 ; gain = 4.066
+INFO: [Common 17-1381] The checkpoint 'Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/project.runs/impl_1/vcamaster_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg225'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg225'
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 470c3af5 ConstDB: 0 ShapeSum: 92fb8066 RouteDB: 0
+
+Phase 1 Build RT Design
+WARNING: [Route 35-198] Port "params_V_Dout_A[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_rst_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "outv_V_V_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "outv_V_V_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "inv_V_TDATA[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "inv_V_TDATA[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "params_V_Dout_A[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "params_V_Dout_A[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+Phase 1 Build RT Design | Checksum: 147921fc7
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1021.965 ; gain = 80.504
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 147921fc7
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1021.965 ; gain = 80.504
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 147921fc7
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1026.820 ; gain = 85.359
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 147921fc7
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1026.820 ; gain = 85.359
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 86316d54
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1027.695 ; gain = 86.234
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.389  | TNS=0.000  | WHS=-0.161 | THS=-5.518 |
+
+Phase 2 Router Initialization | Checksum: 16202a980
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1028.980 ; gain = 87.520
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1680eb452
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1028.980 ; gain = 87.520
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.347  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1bbef3e4d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1028.980 ; gain = 87.520
+Phase 4 Rip-up And Reroute | Checksum: 1bbef3e4d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1028.980 ; gain = 87.520
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 16c5a90a9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1028.980 ; gain = 87.520
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.497  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 16c5a90a9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1028.980 ; gain = 87.520
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 16c5a90a9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1028.980 ; gain = 87.520
+Phase 5 Delay and Skew Optimization | Checksum: 16c5a90a9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1028.980 ; gain = 87.520
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 19884443b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1028.980 ; gain = 87.520
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.497  | TNS=0.000  | WHS=0.140  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: da4ecc35
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1028.980 ; gain = 87.520
+Phase 6 Post Hold Fix | Checksum: da4ecc35
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1028.980 ; gain = 87.520
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.121059 %
+  Global Horizontal Routing Utilization  = 0.128447 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 185dfadfe
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1028.980 ; gain = 87.520
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 185dfadfe
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1030.012 ; gain = 88.551
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 208d28384
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1030.012 ; gain = 88.551
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.497  | TNS=0.000  | WHS=0.140  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 208d28384
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1030.012 ; gain = 88.551
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1030.012 ; gain = 88.551
+
+Routing Is Done.
+58 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1030.012 ; gain = 88.551
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.150 . Memory (MB): peak = 1030.012 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/project.runs/impl_1/vcamaster_routed.dcp' has been generated.
+Command: report_drc -file vcamaster_drc_routed.rpt -pb vcamaster_drc_routed.pb -rpx vcamaster_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/project.runs/impl_1/vcamaster_drc_routed.rpt.
+report_drc completed successfully
+Command: report_methodology -file vcamaster_methodology_drc_routed.rpt -rpx vcamaster_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/project.runs/impl_1/vcamaster_methodology_drc_routed.rpt.
+report_methodology completed successfully
+Command: report_power -file vcamaster_power_routed.rpt -pb vcamaster_power_summary_routed.pb -rpx vcamaster_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+65 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 21 01:31:53 2017...
+[Tue Nov 21 01:31:53 2017] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:46 . Memory (MB): peak = 926.070 ; gain = 4.156
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/.Xil/Vivado-7064-MANOVELLA4169/dcp4/vcamaster.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/vcamaster.xdc:2]
+Finished Parsing XDC File [Z:/Documents/workspace/zysh101/src/tcl/vcamaster/zybe/impl/verilog/.Xil/Vivado-7064-MANOVELLA4169/dcp4/vcamaster.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1013.656 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 1013.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1049.332 ; gain = 1.039
+
+
+Implementation tool: Xilinx Vivado v.2017.2
+Project:             vcamaster
+Solution:            zybe
+Device target:       xc7z010clg225-1
+Report date:         Tue Nov 21 01:31:56 +0100 2017
+
+#=== Post-Implementation Resource usage ===
+SLICE:          102
+LUT:            171
+FF:             319
+DSP:              2
+BRAM:             0
+SRL:              0
+#=== Final timing ===
+CP required:    4.000
+CP achieved post-synthesis:    3.619
+CP achieved post-implementation:    3.503
+Timing met
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 21 01:31:56 2017...
+INFO: [HLS 200-112] Total elapsed time: 138.649 seconds; peak allocated memory: 106.499 MB.
