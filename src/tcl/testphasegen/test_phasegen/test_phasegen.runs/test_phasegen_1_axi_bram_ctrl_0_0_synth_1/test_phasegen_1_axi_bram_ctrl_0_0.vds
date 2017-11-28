@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Nov 27 20:38:25 2017
+# Process ID: 9480
+# Current directory: Z:/Documents/workspace/zysh101/src/tcl/testphasegen/test_phasegen/test_phasegen.runs/test_phasegen_1_axi_bram_ctrl_0_0_synth_1
+# Command line: vivado.exe -log test_phasegen_1_axi_bram_ctrl_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_phasegen_1_axi_bram_ctrl_0_0.tcl
+# Log file: Z:/Documents/workspace/zysh101/src/tcl/testphasegen/test_phasegen/test_phasegen.runs/test_phasegen_1_axi_bram_ctrl_0_0_synth_1/test_phasegen_1_axi_bram_ctrl_0_0.vds
+# Journal file: Z:/Documents/workspace/zysh101/src/tcl/testphasegen/test_phasegen/test_phasegen.runs/test_phasegen_1_axi_bram_ctrl_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source test_phasegen_1_axi_bram_ctrl_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 311.484 ; gain = 80.125
+INFO: [Synth 8-638] synthesizing module 'test_phasegen_1_axi_bram_ctrl_0_0' [z:/Documents/workspace/zysh101/src/tcl/testphasegen/test_phasegen/test_phasegen.srcs/sources_1/bd/test_phasegen_1/ip/test_phasegen_1_axi_bram_ctrl_0_0/synth/test_phasegen_1_axi_bram_ctrl_0_0.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [z:/Documents/workspace/zysh101/src/tcl/testphasegen/test_phasegen/test_phasegen.srcs/sources_1/bd/test_phasegen_1/ipshared/9183/hdl/axi_bram_ctrl_v4_0_rfs.vhd:23897]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [z:/Documents/workspace/zysh101/src/tcl/testphasegen/test_phasegen/test_phasegen.srcs/sources_1/bd/test_phasegen_1/ipshared/9183/hdl/axi_bram_ctrl_v4_0_rfs.vhd:22901]
+INFO: [Synth 8-638] synthesizing module 'axi_lite' [z:/Documents/workspace/zysh101/src/tcl/testphasegen/test_phasegen/test_phasegen.srcs/sources_1/bd/test_phasegen_1/ipshared/9183/hdl/axi_bram_ctrl_v4_0_rfs.vhd:7102]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite' (1#1) [z:/Documents/workspace/zysh101/src/tcl/testphasegen/test_phasegen/test_phasegen.srcs/sources_1/bd/test_phasegen_1/ipshared/9183/hdl/axi_bram_ctrl_v4_0_rfs.vhd:7102]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (2#1) [z:/Documents/workspace/zysh101/src/tcl/testphasegen/test_phasegen/test_phasegen.srcs/sources_1/bd/test_phasegen_1/ipshared/9183/hdl/axi_bram_ctrl_v4_0_rfs.vhd:22901]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl' (3#1) [z:/Documents/workspace/zysh101/src/tcl/testphasegen/test_phasegen/test_phasegen.srcs/sources_1/bd/test_phasegen_1/ipshared/9183/hdl/axi_bram_ctrl_v4_0_rfs.vhd:23897]
+INFO: [Synth 8-256] done synthesizing module 'test_phasegen_1_axi_bram_ctrl_0_0' (4#1) [z:/Documents/workspace/zysh101/src/tcl/testphasegen/test_phasegen/test_phasegen.srcs/sources_1/bd/test_phasegen_1/ip/test_phasegen_1_axi_bram_ctrl_0_0/synth/test_phasegen_1_axi_bram_ctrl_0_0.vhd:92]
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 425.066 ; gain = 193.707
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 425.066 ; gain = 193.707
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 651.438 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 651.438 ; gain = 420.078
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 651.438 ; gain = 420.078
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 651.438 ; gain = 420.078
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 651.438 ; gain = 420.078
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 651.438 ; gain = 420.078
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 651.438 ; gain = 420.078
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 651.438 ; gain = 420.078
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 651.438 ; gain = 420.078
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 651.438 ; gain = 420.078
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 651.438 ; gain = 420.078
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 651.438 ; gain = 420.078
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 651.438 ; gain = 420.078
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 651.438 ; gain = 420.078
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 651.438 ; gain = 420.078
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     2|
+|3     |LUT3 |     2|
+|4     |LUT4 |     7|
+|5     |LUT5 |     4|
+|6     |LUT6 |    17|
+|7     |FDRE |    15|
+|8     |FDSE |     1|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 651.438 ; gain = 420.078
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 651.438 ; gain = 421.703

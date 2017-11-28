@@ -1,0 +1,13 @@
+00:26:10 INFO  : Registering command handlers for SDK TCF services
+00:26:10 INFO  : Launching XSCT server: xsct.bat -interactive Z:\Documents\workspace\zysh101\src\tcl\testnco\nco\nco.sdk\temp_xsdb_launch_script.tcl
+00:26:13 INFO  : XSCT server has started successfully.
+00:26:16 INFO  : Successfully done setting XSCT server connection channel  
+00:26:17 INFO  : Processing command line option -hwspec Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.sdk/nco_1_wrapper.hdf.
+00:26:17 INFO  : Successfully done setting SDK workspace  
+09:55:48 INFO  : Launching XSCT server: xsct.bat -interactive Z:\Documents\workspace\zysh101\src\tcl\testnco\nco\nco.sdk\temp_xsdb_launch_script.tcl
+09:55:50 INFO  : XSCT server has started successfully.
+09:55:51 INFO  : Successfully done setting XSCT server connection channel  
+09:55:51 INFO  : Successfully done setting SDK workspace  
+09:55:54 INFO  : Registering command handlers for SDK TCF services
+09:55:56 INFO  : Processing command line option -hwspec Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.sdk/nco_1_wrapper.hdf.
+09:55:56 INFO  : Checking for hwspec changes in the project nco_1_wrapper_hw_platform_0.

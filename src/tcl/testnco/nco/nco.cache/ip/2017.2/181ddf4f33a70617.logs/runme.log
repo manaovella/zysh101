@@ -1,0 +1,363 @@
+
+*** Running vivado
+    with args -log nco_1_datadevnull_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source nco_1_datadevnull_0_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source nco_1_datadevnull_0_0.tcl -notrace
+Command: synth_design -top nco_1_datadevnull_0_0 -part xc7z010clg225-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg225'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg225'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7680 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 309.566 ; gain = 79.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nco_1_datadevnull_0_0' [z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.srcs/sources_1/bd/nco_1/ip/nco_1_datadevnull_0_0/synth/nco_1_datadevnull_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'datadevnull' [z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.srcs/sources_1/bd/nco_1/ipshared/c161/hdl/verilog/datadevnull.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.srcs/sources_1/bd/nco_1/ipshared/c161/hdl/verilog/datadevnull.v:58]
+INFO: [Synth 8-638] synthesizing module 'devnull' [z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.srcs/sources_1/bd/nco_1/ipshared/c161/hdl/verilog/devnull.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.srcs/sources_1/bd/nco_1/ipshared/c161/hdl/verilog/devnull.v:47]
+INFO: [Synth 8-256] done synthesizing module 'devnull' (1#1) [z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.srcs/sources_1/bd/nco_1/ipshared/c161/hdl/verilog/devnull.v:10]
+WARNING: [Synth 8-6014] Unused sequential element params_V_Rst_A_reg was removed.  [z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.srcs/sources_1/bd/nco_1/ipshared/c161/hdl/verilog/datadevnull.v:163]
+INFO: [Synth 8-256] done synthesizing module 'datadevnull' (2#1) [z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.srcs/sources_1/bd/nco_1/ipshared/c161/hdl/verilog/datadevnull.v:12]
+INFO: [Synth 8-256] done synthesizing module 'nco_1_datadevnull_0_0' (3#1) [z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.srcs/sources_1/bd/nco_1/ip/nco_1_datadevnull_0_0/synth/nco_1_datadevnull_0_0.v:57]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[31]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[30]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[29]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[28]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[27]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[26]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[25]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[24]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[23]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[22]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[21]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[20]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[19]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[18]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[17]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[16]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[15]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[14]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[13]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[12]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[11]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[10]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[9]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[8]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[7]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[6]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[5]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[4]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[3]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[2]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[1]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 349.898 ; gain = 119.570
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 349.898 ; gain = 119.570
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.srcs/sources_1/bd/nco_1/ip/nco_1_datadevnull_0_0/constraints/datadevnull_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.srcs/sources_1/bd/nco_1/ip/nco_1_datadevnull_0_0/constraints/datadevnull_ooc.xdc] for cell 'inst'
+Parsing XDC File [Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_datadevnull_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_datadevnull_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 648.793 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_datadevnull_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module devnull 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module datadevnull 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[31]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[30]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[29]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[28]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[27]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[26]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[25]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[24]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[23]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[22]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[21]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[20]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[19]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[18]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[17]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[16]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[15]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[14]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[13]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[12]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[11]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[10]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[9]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[8]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[7]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[6]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[5]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[4]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[3]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[2]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[1]
+WARNING: [Synth 8-3331] design datadevnull has unconnected port inv_V_TDATA[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    11|
+|2     |LUT1   |    33|
+|3     |LUT2   |     3|
+|4     |LUT3   |     2|
+|5     |LUT4   |     4|
+|6     |LUT5   |     2|
+|7     |LUT6   |    11|
+|8     |FDRE   |   103|
+|9     |FDSE   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+------------+------+
+|      |Instance              |Module      |Cells |
++------+----------------------+------------+------+
+|1     |top                   |            |   171|
+|2     |  inst                |datadevnull |   171|
+|3     |    grp_devnull_fu_34 |devnull     |   164|
++------+----------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 648.793 ; gain = 418.465
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 648.793 ; gain = 119.570
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 648.793 ; gain = 418.465
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+20 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 648.793 ; gain = 419.094
+INFO: [Common 17-1381] The checkpoint 'Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_datadevnull_0_0_synth_1/nco_1_datadevnull_0_0.dcp' has been generated.

@@ -1,0 +1,20 @@
+
+
+Implementation tool: Xilinx Vivado v.2017.2
+Project:             devnulldata
+Solution:            zybe
+Device target:       xc7z010clg225-1
+Report date:         Mon Nov 27 23:37:34 +0100 2017
+
+#=== Post-Implementation Resource usage ===
+SLICE:           28
+LUT:             23
+FF:             105
+DSP:              0
+BRAM:             0
+SRL:              0
+#=== Final timing ===
+CP required:    4.000
+CP achieved post-synthesis:    3.463
+CP achieved post-implementation:    3.412
+Timing met

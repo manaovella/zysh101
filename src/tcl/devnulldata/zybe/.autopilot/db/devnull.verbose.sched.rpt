@@ -1,0 +1,183 @@
+
+
+================================================================
+== Vivado HLS Report for 'devnull'
+================================================================
+* Date:           Mon Nov 27 23:35:24 2017
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        devnulldata
+* Solution:       zybe
+* Product family: zynq
+* Target device:  xc7z010clg225-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      3.26|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- loop    |    ?|    ?|         2|          -|          -|     ?|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / (!exitcond)
+4 --> 
+	3  / true
+* FSM state operations: 
+
+ <State 1>: 3.25ns
+ST_1: params_V_addr (3)  [1/1] 0.00ns
+:1  %params_V_addr = getelementptr [1024 x i32]* %params_V, i32 0, i32 0
+
+ST_1: max_V (5)  [2/2] 3.25ns  loc: Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:8
+:3  %max_V = load i32* %params_V_addr, align 4
+
+
+ <State 2>: 3.25ns
+ST_2: StgValue_7 (2)  [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecMemCore([1024 x i32]* %params_V, [1 x i8]* @p_str1, [12 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+ST_2: StgValue_8 (4)  [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecInterface([1024 x i32]* %params_V, [5 x i8]* @p_str7, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_2: max_V (5)  [1/2] 3.25ns  loc: Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:8
+:3  %max_V = load i32* %params_V_addr, align 4
+
+ST_2: params_V_addr_1 (6)  [1/1] 0.00ns  loc: Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:12
+:4  %params_V_addr_1 = getelementptr [1024 x i32]* %params_V, i32 0, i32 1
+
+ST_2: StgValue_11 (7)  [1/1] 1.59ns  loc: Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:9
+:5  br label %1
+
+
+ <State 3>: 3.26ns
+ST_3: t_V (9)  [1/1] 0.00ns
+:0  %t_V = phi i32 [ 0, %0 ], [ %counter_V, %2 ]
+
+ST_3: exitcond (10)  [1/1] 3.26ns  loc: Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:9
+:1  %exitcond = icmp eq i32 %t_V, %max_V
+
+ST_3: counter_V (11)  [1/1] 2.90ns  loc: Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:11
+:2  %counter_V = add i32 %t_V, 1
+
+ST_3: StgValue_15 (12)  [1/1] 0.00ns  loc: Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:9
+:3  br i1 %exitcond, label %3, label %2
+
+ST_3: StgValue_16 (18)  [1/1] 0.00ns  loc: Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:14
+:0  ret void
+
+
+ <State 4>: 3.25ns
+ST_4: StgValue_17 (14)  [1/1] 0.00ns  loc: Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:10
+:0  call void (...)* @_ssdm_op_SpecLoopName([5 x i8]* @p_str) nounwind
+
+ST_4: StgValue_18 (15)  [1/1] 3.25ns  loc: Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:12
+:1  store i32 %counter_V, i32* %params_V_addr_1, align 4
+
+ST_4: StgValue_19 (16)  [1/1] 0.00ns  loc: Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:13
+:2  br label %1
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('params_V_addr') [3]  (0 ns)
+	'load' operation ('max.V', Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:8) on array 'params_V' [5]  (3.25 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('max.V', Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:8) on array 'params_V' [5]  (3.25 ns)
+
+ <State 3>: 3.26ns
+The critical path consists of the following:
+	'phi' operation ('counter.V') with incoming values : ('counter.V', Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:11) [9]  (0 ns)
+	'icmp' operation ('exitcond', Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:9) [10]  (3.26 ns)
+
+ <State 4>: 3.25ns
+The critical path consists of the following:
+	'store' operation (Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:12) of variable 'counter.V', Z:/Documents/workspace/zysh101/src/hls/devnull.cpp:11 on array 'params_V' [15]  (3.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

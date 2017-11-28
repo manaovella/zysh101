@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="nco_1_datadevnull_0_0_synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_datadevnull_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nco_1_rst_ps7_0_100M_0_synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nco_1_nco_0_0_synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_nco_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nco_1_axi_bram_ctrl_2_bram_0_synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_axi_bram_ctrl_2_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nco_1_phasegen_0_0_synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_phasegen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nco_1_axi_bram_ctrl_2_0_synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_axi_bram_ctrl_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nco_1_jtag_axi_0_0_synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_jtag_axi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nco_1_axi_bram_ctrl_1_0_synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_axi_bram_ctrl_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nco_1_axi_bram_ctrl_1_bram_0_synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_axi_bram_ctrl_1_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nco_1_axi_bram_ctrl_0_0_synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_axi_bram_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nco_1_processing_system7_0_0_synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nco_1_axi_bram_ctrl_0_bram_0_synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_axi_bram_ctrl_0_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nco_1_axi_smc_0_synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/nco_1_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="nco_1_datadevnull_0_0_synth_1"/>
+		<Parent Id="nco_1_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="nco_1_nco_0_0_synth_1"/>
+		<Parent Id="nco_1_axi_bram_ctrl_2_bram_0_synth_1"/>
+		<Parent Id="nco_1_phasegen_0_0_synth_1"/>
+		<Parent Id="nco_1_axi_bram_ctrl_2_0_synth_1"/>
+		<Parent Id="nco_1_jtag_axi_0_0_synth_1"/>
+		<Parent Id="nco_1_axi_bram_ctrl_1_0_synth_1"/>
+		<Parent Id="nco_1_axi_bram_ctrl_1_bram_0_synth_1"/>
+		<Parent Id="nco_1_axi_bram_ctrl_0_0_synth_1"/>
+		<Parent Id="nco_1_processing_system7_0_0_synth_1"/>
+		<Parent Id="nco_1_axi_bram_ctrl_0_bram_0_synth_1"/>
+		<Parent Id="nco_1_axi_smc_0_synth_1"/>
+	</Run>
+</Runs>
+

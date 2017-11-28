@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# 
+# Start of session at: Tue Nov 28 00:27:09 2017
+# Process ID: 6212
+# Current directory: Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.sdk/webtalk/webtalk.log
+# Journal file: Z:/Documents/workspace/zysh101/src/tcl/testnco/nco/nco.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

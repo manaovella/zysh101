@@ -98,12 +98,12 @@ static void rpmsg_read_cb(struct rpmsg_channel *rp_chnl, void *data, int len,
 	}
 }
 
-static void rpmsg_channel_created(struct rpmsg_channel *rp_chnl)
+static void rpmsg_chan_created(struct rpmsg_channel *rp_chnl)
 {
 	rp_ept = rpmsg_create_ept(rp_chnl, rpmsg_read_cb, RPMSG_NULL,  RPMSG_ADDR_ANY);
 }
 
-static void rpmsg_channel_deleted(struct rpmsg_channel *rp_chnl)
+static void rpmsg_chan_deleted(struct rpmsg_channel *rp_chnl)
 {
 	(void)rp_chnl;
 
@@ -121,10 +121,7 @@ int app(struct hil_proc *hproc)
 
 	/* Initialize RPMSG framework */
 	LPRINTF("Try to init remoteproc resource\n");
-	status = remoteproc_resource_init(&rsc_info, hproc,
-									  rpmsg_channel_created,
-									  rpmsg_channel_deleted, rpmsg_read_cb,
-									  &proc, 0);
+	status = remoteproc_resource_init(&rsc_info, hproc, rpmsg_chan_created, rpmsg_chan_deleted, rpmsg_read_cb, &proc, 0);
 
 	if (RPROC_SUCCESS != status)
 	{
