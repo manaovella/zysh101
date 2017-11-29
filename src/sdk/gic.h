@@ -14,6 +14,6 @@ public:
 private:
 
     static XScuGic xInterruptController;
-}
+};
 
 #endif

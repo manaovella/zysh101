@@ -706,8 +706,8 @@ imum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependen
       </xilinx:taxonomies>
       <xilinx:displayName>Nco</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1711272332</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2017-11-27T22:32:43Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1711281026</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2017-11-28T09:26:28Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>

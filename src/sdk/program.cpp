@@ -1,9 +1,9 @@
 #include "stdinc.h"
-#include "MainMgr.h"
-#include "platform_info.h"
-#include "rsc_table.h"
+#include "program.h"
+#include "platform.h"
+#include "resource.h"
 #include "event.h"
-#include "EventFactory.h"
+//#include "EventFactory.h"
 #include "gic.h"
 
 int Program::Main()
@@ -50,9 +50,9 @@ void MainMgr::Tick()
 //
 void Program::Recv(void* data, int len)
 {
-	Event* ev = EventFactory::Create(data);
-	for (int i = 0; i < 3; i++)
-		IpList[i]->Recv(ev);
+	//Event* ev = EventFactory::Create(data);
+	//for (int i = 0; i < 3; i++)
+	//	IpList[i]->Recv(ev);
 }
 
 //

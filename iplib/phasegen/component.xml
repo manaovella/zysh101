@@ -583,8 +583,8 @@ twidth {attribs {resolve_type immediate dependency {} format long minimum {} max
       </xilinx:taxonomies>
       <xilinx:displayName>Phasegen</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1711272330</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2017-11-27T22:30:20Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1711281023</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2017-11-28T09:23:59Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>

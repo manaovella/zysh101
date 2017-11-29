@@ -38,9 +38,9 @@ int Gic::initialize()
 }
 
 // Main hw machinery initialization entry point, called from main()  return 0 on success */
-int Gic::InitSystem(void)
+int Gic::InitSystem()
 {
-	struct metal_init_params metal_param = METAL_INIT_DEFAULTS;
+	metal_init_params metal_param = METAL_INIT_DEFAULTS;
 	metal_init(&metal_param);
 	app_gic_initialize();
 	return 0;

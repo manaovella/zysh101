@@ -1,10 +1,14 @@
 #ifndef __TYPEDEF_H__
 #define __TYPEDEF_H__
 
+#include "define.h"
 #include "ap_int.h"
 #include "ap_fixed.h"
+
+
+#ifndef __SDK
 #include "hls_stream.h"
-#include "define.h"
+#endif
 
 #ifdef __SDK
 typedef u8 uint8;
@@ -37,7 +41,6 @@ typedef ap_fixed<24,2>   fixed24d02;  // ]-2.0:2.0[
 typedef ap_ufixed<32,8>  ufixed32d08; // [0:256.0[
 typedef ap_fixed<32,2>   fixed32d02; //  ]-1.0:1.0[
 typedef ap_uint<24> 	 i2s_t;
-typedef hls::stream<i2s_t>  streami2s_t;
 
 //
 struct test_t
@@ -48,8 +51,6 @@ struct test_t
 	uint2  pan;
 };
 
-typedef hls::stream<test_t>  streamtest_t;
-
 //
 struct phase_t
 {
@@ -57,8 +58,6 @@ struct phase_t
 	uint4  voice;
 	uint3  layer;
 };
-
-typedef hls::stream<phase_t> streamphase_t;
 
 //
 struct data_t
@@ -68,16 +67,12 @@ struct data_t
 	uint3 layer;
 };
 
-typedef hls::stream<data_t>  streamdata_t;
-
 //
 struct layer_t
 {
 	fixed24d02 data;
 	uint3 layer;
 };
-
-typedef hls::stream<layer_t>  streamlayer_t;
 
 //
 struct master_t
@@ -86,6 +81,20 @@ struct master_t
 	uint1 pan;
 };
 
+
+#ifndef __SDK
+
+typedef hls::stream<i2s_t>  streami2s_t;
+
+typedef hls::stream<test_t>  streamtest_t;
+
+typedef hls::stream<phase_t> streamphase_t;
+
+typedef hls::stream<data_t>  streamdata_t;
+
+typedef hls::stream<layer_t>  streamlayer_t;
+
 typedef hls::stream<master_t>  streammaster_t;
+#endif
 
 #endif

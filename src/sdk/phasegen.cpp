@@ -3,10 +3,8 @@
 
 void Phasegen::Tick()
 {
-
 }
 
 void Phasegen::Recv(Event* ev)
 {
-
 }

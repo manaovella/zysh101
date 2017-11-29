@@ -1,7 +1,7 @@
 #include "stdinc.h"
-#include "platform_info.h"
+#include "stdinc.h"
+#include "platform.h"
 
-// processor operations for hil_proc for A9. It defines notification operation and remote processor management.
 extern struct hil_platform_ops zynq_a9_proc_ops;
 
 // Firmware_info and fw_table_size are required in current version (2017.3)

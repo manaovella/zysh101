@@ -389,7 +389,7 @@ create_bd_cell -type ip -vlnv xilinx.com:ip:jtag_axi:1.2 jtag_axi_0
 apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Slave "/axi_bram_ctrl_0/S_AXI" intc_ip "/axi_smc" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins jtag_axi_0/M_AXI]
 endgroup
 
-set_property  ip_repo_paths  {../../../iplib/} [current_project]
+set_property  ip_repo_paths  {../../../../iplib/} [current_project]
 update_ip_catalog
 create_bd_cell -type ip -vlnv xilinx.com:hls:phasegen:1.0 phasegen_0
 apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/axi_bram_ctrl_0_bram" }  [get_bd_intf_pins phasegen_0/params_V_PORTA]

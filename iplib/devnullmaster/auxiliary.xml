@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="masterdevnull" xd:componentRef="masterdevnull" xd:initiationInterval="x" xd:clockPeriod="4.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="inv.data" xd:originalName="inv" xd:direction="in" xd:interfaceRef="inv" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="23:0" xd:dataWidth="24"/>
+  <xd:arg xd:name="inv.pan" xd:originalName="inv" xd:direction="in" xd:interfaceRef="inv" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="24:24" xd:dataWidth="1"/>
+  <xd:arg xd:name="params[]" xd:originalName="params" xd:direction="inout" xd:interfaceRef="params_V_PORTA" xd:busTypeRef="bram" xd:arraySize="1024" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="143" xd:FF="206" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

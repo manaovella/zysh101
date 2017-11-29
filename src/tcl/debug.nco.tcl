@@ -1,9 +1,10 @@
 set currwd [pwd]
-open_project $currwd/testnco/nco/nco.xpr
+open_project $currwd/nco/nco.xpr
 
 # sdk
-launch_sdk -workspace $currwd/testnco/nco/nco.sdk -hwspec $currwd/testnco/nco/nco.sdk/nco_1_wrapper.hdf
+launch_sdk -workspace $currwd/nco/nco.sdk -hwspec $currwd/.build/nco/nco.sdk/nco_1_wrapper.hdf
 
 # hw manager
-open_hw
-connect_hw_server
+# start_gui
+# open_hw
+# connect_hw_server

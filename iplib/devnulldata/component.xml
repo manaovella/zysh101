@@ -586,8 +586,8 @@ imum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependen
       </xilinx:taxonomies>
       <xilinx:displayName>Datadevnull</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1711272335</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2017-11-27T22:35:32Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1711281029</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2017-11-28T09:29:22Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>

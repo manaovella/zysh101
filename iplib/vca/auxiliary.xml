@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="vca" xd:componentRef="vca" xd:initiationInterval="867" xd:clockPeriod="4.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="inv.data" xd:originalName="inv" xd:direction="in" xd:interfaceRef="inv_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="23:0" xd:dataWidth="24"/>
+  <xd:arg xd:name="inv.voice" xd:originalName="inv" xd:direction="in" xd:interfaceRef="inv_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="27:24" xd:dataWidth="4"/>
+  <xd:arg xd:name="inv.layer" xd:originalName="inv" xd:direction="in" xd:interfaceRef="inv_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="30:28" xd:dataWidth="3"/>
+  <xd:arg xd:name="outv.data" xd:originalName="outv" xd:direction="out" xd:interfaceRef="outv_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="23:0" xd:dataWidth="24"/>
+  <xd:arg xd:name="outv.layer" xd:originalName="outv" xd:direction="out" xd:interfaceRef="outv_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="26:24" xd:dataWidth="3"/>
+  <xd:arg xd:name="params[]" xd:originalName="params" xd:direction="inout" xd:interfaceRef="params_V_PORTA" xd:busTypeRef="bram" xd:firstOut="4" xd:arraySize="1024" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="866" xd:worst-case="866" xd:average-case="866"/>
+  <xd:resourceEstimates xd:LUT="344" xd:FF="928" xd:BRAM="0" xd:DSP="4"/>
+</xd:acceleratorMap>
