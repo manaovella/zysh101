@@ -1,9 +1,3 @@
-if (!$vivadopath)
-{
-    Write-Output "vivadopath not defined...exiting"
-    exit
-}
-
 del *.log
 Write-Output "Starting hls build..."
 Write-Output "Remove previous hls iplib..."
@@ -27,7 +21,8 @@ Remove-Item -recurse -Force .\.build\vcamaster\
 Write-Output "hls build..."
 mkdir .\.build
 mkdir ..\..\ipbli\zyiplib\
-$vivadopath\vivado_hls.bat ./hls.build.zybe.tcl
+cd .\.build
+c:\xilinx\vivado\2017.3\bin\vivado_hls.bat ../hls.build.zybe.tcl"} 
 Write-Output "move new hls build in iplib..."
 Move-Item -path .\phasegen\zybe\impl\ip\ -destination ..\..\iplib\zyiplib\phasegen\
 Move-Item -path .\devnullphase\zybe\impl\ip\ -destination ..\..\iplib\zyiplib\devnullphase\

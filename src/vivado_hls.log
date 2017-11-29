@@ -1,0 +1,23 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vivado/2017.3/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'manovella' on host 'manovella4169' (Windows NT_amd64 version 6.2) on Wed Nov 29 17:16:10 +0100 2017
+INFO: [HLS 200-10] In directory 'Z:/Documents/workspace/zysh101/src'
+./hls.build.zybe.tcl can't be opened.
+couldn't read file "./hls.build.zybe.tcl": no such file or directory
+    while executing
+"source ./hls.build.zybe.tcl"
+    invoked from within
+"hls::main ./hls.build.zybe.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"
+INFO: [Common 17-206] Exiting vivado_hls at Wed Nov 29 17:16:10 2017...
