@@ -20,7 +20,7 @@ Remove-Item -recurse -Force .\.build\vca\
 Remove-Item -recurse -Force .\.build\vcamaster\
 Write-Output "hls build..."
 mkdir .\.build
-mkdir ..\..\ipbli\zyiplib\
+mkdir ..\..\iplib\zyiplib\
 cd .\.build
 c:\xilinx\vivado\2017.3\bin\vivado_hls.bat ../hls.build.zybe.tcl
 Write-Output "move new hls build in iplib..."
