@@ -22,7 +22,7 @@ Write-Output "hls build..."
 mkdir .\.build
 mkdir ..\..\ipbli\zyiplib\
 cd .\.build
-c:\xilinx\vivado\2017.3\bin\vivado_hls.bat ../hls.build.zybe.tcl"} 
+c:\xilinx\vivado\2017.3\bin\vivado_hls.bat ../hls.build.zybe.tcl
 Write-Output "move new hls build in iplib..."
 Move-Item -path .\phasegen\zybe\impl\ip\ -destination ..\..\iplib\zyiplib\phasegen\
 Move-Item -path .\devnullphase\zybe\impl\ip\ -destination ..\..\iplib\zyiplib\devnullphase\
