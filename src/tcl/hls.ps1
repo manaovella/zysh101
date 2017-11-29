@@ -20,14 +20,15 @@ Remove-Item -recurse -Force .\.build\vca\
 Remove-Item -recurse -Force .\.build\vcamaster\
 Write-Output "hls build..."
 mkdir .\.build
+mkdir ..\..\ipbli\zyiplib\
 C:\Xilinx\Vivado_HLS\2017.2\bin\vivado_hls.bat ./hls.build.zybe.tcl
 Write-Output "move new hls build in iplib..."
-Move-Item -path .\phasegen\zybe\impl\ip\ -destination ..\..\iplib\phasegen\
-Move-Item -path .\devnullphase\zybe\impl\ip\ -destination ..\..\iplib\devnullphase\
-Move-Item -path .\devnulldata\zybe\impl\ip\ -destination ..\..\iplib\devnulldata\
-Move-Item -path .\devnullmaster\zybe\impl\ip\ -destination ..\..\iplib\devnullmaster\
-Move-Item -path .\dynamics\zybe\impl\ip\ -destination ..\..\iplib\dynamics\
-Move-Item -path .\nco\zybe\impl\ip\ -destination ..\..\iplib\nco\
-Move-Item -path .\vca\zybe\impl\ip\ -destination ..\..\iplib\vca\
-Move-Item -path .\vcamaster\zybe\impl\ip -destination ..\..\iplib\vcamaster\
+Move-Item -path .\phasegen\zybe\impl\ip\ -destination ..\..\iplib\zyiplib\phasegen\
+Move-Item -path .\devnullphase\zybe\impl\ip\ -destination ..\..\iplib\zyiplib\devnullphase\
+Move-Item -path .\devnulldata\zybe\impl\ip\ -destination ..\..\iplib\zyiplib\devnulldata\
+Move-Item -path .\devnullmaster\zybe\impl\ip\ -destination ..\..\iplib\zyiplib\devnullmaster\
+Move-Item -path .\dynamics\zybe\impl\ip\ -destination ..\..\iplib\zyiplib\dynamics\
+Move-Item -path .\nco\zybe\impl\ip\ -destination ..\..\iplib\zyiplib\nco\
+Move-Item -path .\vca\zybe\impl\ip\ -destination ..\..\iplib\zyiplib\vca\
+Move-Item -path .\vcamaster\zybe\impl\ip -destination ..\..\iplib\zyiplib\vcamaster\
 Write-Output "...build completed"
