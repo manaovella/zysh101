@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message prefix="[HLS 200-40]" severity="warn" keynum="HLS_40_1310" content="Cannot find source file Z:/Documents/workspace/zysh101/src/tcl/../../hls/phasegen.cpp; skipping it." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="warn" keynum="HLS_40_1310" content="Cannot find source file Z:/Documents/workspace/zysh101/src/tcl/../../hls/define.h; skipping it." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="warn" keynum="HLS_40_1310" content="Cannot find source file Z:/Documents/workspace/zysh101/src/tcl/../../hls/typedef.h; skipping it." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 105.598 ; gain = 49.973" tag=""/>
+	<Message prefix="[HLS 200-70]" severity="error" keynum="HLS_70_1308" content="Cannot find any design unit to elaborate." tag=""/>
+	<Message prefix="[HLS 200-150]" severity="info" keynum="11" content="Error in linking the design.
+    while executing
+&quot;source ./hls.build.zybe.tcl&quot;
+    invoked from within
+&quot;hls::main ./hls.build.zybe.tcl&quot;
+    (&quot;uplevel&quot; body line 1)
+    invoked from within
+&quot;uplevel 1 hls::main {*}$args&quot;
+    (procedure &quot;hls_proc&quot; line 5)
+    invoked from within
+&quot;hls_proc $argv&quot;" tag=""/>
+</Messages>

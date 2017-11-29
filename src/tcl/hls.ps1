@@ -2,9 +2,8 @@ $vivadopath = Read-Host 'What is vivado path?'
 $pathok = Test-Path $vivadopath
 If ($pathok -eq $True) 
 {    
-    $fullpath = Join-Path $vivadopath '\vivado.bat'
+    $fullpath = Join-Path $vivadopath '\bin\vivado_hls.bat ..//hls.build.zybe.tcl'    
     
-    Write-Host "Yippee"
     del *.log
     Write-Output "Starting hls build..."
     Write-Output "Remove previous hls iplib..."
@@ -29,7 +28,8 @@ If ($pathok -eq $True)
     mkdir .\.build
     mkdir ..\..\iplib\zyiplib\
     cd .\.build
-    Invoke-Expression -Command $fullpath  '../hls.build.zybe.tcl'
+    Write-Output $fullpath
+    Invoke-Expression -Command $fullpath
     Write-Output "move new hls build in iplib..."
     Move-Item -path .\phasegen\zybe\impl\ip\ -destination ..\..\..\iplib\zyiplib\
     Rename-Item ..\..\..\iplib\zyiplib\ip phasegen
@@ -48,6 +48,7 @@ If ($pathok -eq $True)
     Move-Item -path .\vcamaster\zybe\impl\ip -destination ..\..\..\iplib\zyiplib\
     Rename-Item ..\..\..\iplib\zyiplib\ip vcamaster
     Write-Output "...build completed"
+    cd ..\
 }
 Else 
 {
